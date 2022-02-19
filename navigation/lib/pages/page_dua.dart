@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:navigation/pages/page_tiga.dart';
+import 'package:navigation/routes/route_name.dart';
 
 class PageDua extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class PageDua extends StatelessWidget {
               child: Text("Back Page")),
           ElevatedButton(
               onPressed: () {
-                Get.to(PageTiga());
+                Get.toNamed(RouteName.page_3);
               },
               child: Text("Next Page")),
         ],
